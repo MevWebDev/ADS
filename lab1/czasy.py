@@ -40,13 +40,13 @@ def f5(n):
 
 nn = [2000, 4000, 8000, 16000, 32000]
 
-for n in nn:  
-  start = timer()
-  f1(n)
-  stop = timer()
-  Tn=stop-start
-  Fn=n
-  print(n, Tn, Fn/Tn)
+# for n in nn:  
+#   start = timer()
+#   f1(n)
+#   stop = timer()
+#   Tn=stop-start
+#   Fn=n
+#   print(n, Tn, Fn/Tn)
 
 # 2000 7.46800001252268e-05 26780931.931525305
 # 4000 0.00014465899994320353 27651234.98413851
@@ -54,13 +54,13 @@ for n in nn:
 # 16000 0.0005609670001831546 28522176.874532785
 # 32000 0.0009114340000451193 35109508.75040418
 
-for n in nn:  
-  start = timer()
-  f2(n)
-  stop = timer()
-  Tn=stop-start
-  Fn=n*n
-  print(n, Tn, Fn/Tn)
+# for n in nn:  
+#   start = timer()
+#   f2(n)
+#   stop = timer()
+#   Tn=stop-start
+#   Fn=n*n
+#   print(n, Tn, Fn/Tn)
 
 # 2000 0.11818655800016131 33844796.46149387
 # 4000 0.44558308300020144 35908005.95989585
@@ -69,13 +69,13 @@ for n in nn:
 # 32000 29.162363327000094 35113752.21952349
 
 
-for n in nn:  
-  start = timer()
-  f3(n)
-  stop = timer()
-  Tn=stop-start
-  Fn=n*n
-  print(n, Tn, Fn/Tn)
+# for n in nn:  
+#   start = timer()
+#   f3(n)
+#   stop = timer()
+#   Tn=stop-start
+#   Fn=n*n
+#   print(n, Tn, Fn/Tn)
 
 # 2000 0.05836330900001485 68536209.9671042
 # 4000 0.2348425000000134 68130768.49377386
@@ -83,13 +83,13 @@ for n in nn:
 # 16000 3.7018591619998915 69154440.72747992
 # 32000 14.774410393999915 69309026.39714544
 
-for n in nn:  
-  start = timer()
-  f4(n)
-  stop = timer()
-  Tn=stop-start
-  Fn=n*math.log(n,2)
-  print(n, Tn, Fn/Tn)
+# for n in nn:  
+#   start = timer()
+#   f4(n)
+#   stop = timer()
+#   Tn=stop-start
+#   Fn=n*math.log(n,2)
+#   print(n, Tn, Fn/Tn)
 
 # 2000 0.0008351960000254621 18201481.949890465
 # 4000 0.0018659890001799795 17779418.076531097
@@ -99,10 +99,10 @@ for n in nn:
 
 for n in nn:  
   start = timer()
-  f4(n)
+  f5(n)
   stop = timer()
   Tn=stop-start
-  Fn=n*math.log(n,2)
+  Fn=math.log(n,2)
   print(n, Tn, Fn/Tn)
 
 # 2000 0.0008201569999073399 26740695.46660209
