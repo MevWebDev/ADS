@@ -1,7 +1,6 @@
 import random
 import sys
 from timeit import default_timer as timer
-
 sys.setrecursionlimit(1000000)
 
 
@@ -56,10 +55,6 @@ def generateBadScenario(n):
     for i in reversed(range(n)):
         A.append(i)
     return A
-# A = generateRandomArray(10)
-# print(quickSortB(A, 0, len(A)-1, 3))
-# print("--------")
-# print(quickSort(A, 0, len(A)-1))
 
 def quickSort_test():
     c = 15
